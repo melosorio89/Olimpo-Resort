@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fuente de google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid barra-navegacion">
+              <a class="navbar-brand logo-nav" href="../index.html">
+                <img src="../assets/logo.png" class="logo-claro" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html
+                    ">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./hospedaje.html">HOSPEDAJE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row fondo-oscuro">
+          <div class="col">
+            <h1 class="h1-fondo-oscuro">CONTACTO</h1>
+            <p class="p-fondo-oscuro">Tu Paraíso deportivo te espera, llena el formulario y envíanos tu consulta, nuestro staff se pondrá en contacto de inmediato.</p>
+          </div>
+        </div>
+        <div class="row fondo-oscuro">
+          <div class="col-12 col-md-4">
+            <figure>
+              <img src="../assets/reserva.jpeg" class="img-contacto" alt="">
+            </figure>
+          </div>
+          <div class="col-12 col-md-8 formulario-oscuro">
+            <form action="submit">
+              <label for="Inputnombre" class="form-label">NOMBRE</label>
+              <input type="text" class="form-control" id="Inputnombre" placeholder="Nombre">
+              <label for="Inputmail" class="form-label">CORREO ELECTRÓNICO</label>
+              <input type= "email" class="form-control" id="Inputmail" placeholder="example@site.com">
+              <div class="form-check">
+                <label for="Inputcheck" class="form-check-label">Soy Deportista Profesional</label>
+                <input type="checkbox" class="form-check-input" id="Inputcheck">
+              </div>
+              <label for="Inputtexto" class="form-label">CONSULTA</label>
+              <input type="text" class="form-control" id="Inputtexto" placeholder="Quisiera recibir información sobre...">
+              <button type="submit" class="btn btn-primary">ENVIAR</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="container-fluid container-footer">
+            <div class="row">
+                <div class="col-12 col-md-6 box-redes">
+                    <a href="#">
+                        <img src="../assets/iglogo.png" class="logo-instagram" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/fblogo.png" class="logo-facebook" alt="">
+                    </a>  
+                    <a href="#">
+                        <img src="../assets/wslogo.png" class="logo-whatsapp" alt="">
+                    </a> 
+                </div>
+                <div class="col-12 col-md-6 box-copy">
+                    <a href="../index.html">
+                        <img src="../assets/logo-fondo-oscuro.png" class="logo-oscuro" alt="">
+                    </a>
+                    <p class="p-fondo-oscuro">OLIMPO Sports Resort. ©2024</p>
+                </div>
+            </div>
+        </div>    
+    </footer>
+    <!--SCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
