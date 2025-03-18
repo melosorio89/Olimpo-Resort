@@ -14,5 +14,87 @@
 /*IMG MIXIN*/
 /*BOX MIXIN*/
 /*COMPONENTS*/
+/*partial variables*/
+/*BACKGORUND COLORS*/
+/*FUENTES*/
+/*COLOR PALLETE*/
+/*MAPA FUENTES*/
+/**partial mixin*/
+/*IMG MIXIN*/
+/*BOX MIXIN*/
+/*componentes navbar*/
+nav div {
+  background-color: #fcecdc;
+  margin-bottom: 0;
+}
+nav div div {
+  width: 100%;
+}
+nav div div ul li {
+  font-family: "Monserrat", sans-serif;
+  color: #000000;
+}
+nav div div ul li a:hoover {
+  color: #2d7a03;
+}
+
+.logo-light {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar-toggler {
+  color: #01591d;
+}
+
+/*Component HOME*/
+main {
+  background-color: #fcecdc;
+}
+
+.box-portada .h1-inicio, .box-portada h1, .box-portada h2 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  color: #014b18;
+  font-size: 72px;
+}
+.box-portada h2 {
+  font-size: 42px;
+}
+.box-portada .img-portada {
+  width: 100%;
+}
+.box-portada p {
+  font-family: "Monserrat", sans-serif;
+  color: #000000;
+  font-size: 16px;
+}
+.box-portada p span a {
+  color: #2d7a03;
+  text-decoration: none;
+}
+
+.fondo-oscuro {
+  background-color: #01591d;
+}
+.fondo-oscuro div p {
+  color: #ffffff;
+  font-family: "Monserrat", sans-serif;
+  text-align: justify;
+}
+
+.h2-fondo-oscuro {
+  color: #eceac9;
+  font-size: 56px;
+}
+
+.imagen-natacion-pro, .imagen-flia {
+  width: 250px;
+  height: 250px;
+}
+
+h1 {
+  font-size: 56px;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -7,3 +7,153 @@
 @use 'partials/utilities/mixins';
 /*COMPONENTS*/
 @use 'partials/components/navbar';
+
+/*partial variables*/
+
+
+/*BACKGORUND COLORS*/
+
+$bg-color-light: #fcecdc;
+$bg-color-dark: #01591d; 
+
+/*FUENTES*/
+
+$primary-font: "Cinzel", serif;
+$p-font: "Monserrat", sans-serif;
+
+/*COLOR PALLETE*/
+
+$p-dark: #000000;
+$p-light: #ffffff;
+$font-dark: #014b18;
+$font-light: #eceac9;
+$link-dark: #2d7a03;
+$link-light: #7b7618;
+
+/*MAPA FUENTES*/
+ $font-color: (
+    p-dark: #000000,
+    p-light: #ffffff,
+    font-dark: #014b18,
+    font-light: #eceac9,
+    link-dark: #2d7a03,
+    link-light: #7b7618
+ );
+
+$font-sizes: (
+    xl: 72px,
+    l: 56px,
+    m: 42px,
+    s: 16px,
+    xs: 14px
+);
+
+/**partial mixin*/
+
+/*IMG MIXIN*/
+@mixin medidas-img ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+/*BOX MIXIN*/
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/*componentes navbar*/
+
+
+nav {
+    div {
+        background-color: $bg-color-light;
+        margin-bottom: 0;
+        div {
+            width: 100%;
+            ul {
+                li {
+                    font-family: $p-font;
+                    color: #000000;
+                    a:hoover {
+                        color: $link-dark;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.logo-light {
+    @include medidas-img (80px, 80px);
+}
+
+.navbar-toggler {
+    color: $bg-color-dark;
+}
+
+/*Component HOME*/
+
+main {
+    background-color: $bg-color-light;
+}
+
+.box-portada {
+    .h1-inicio {
+        font-family: $primary-font;
+        text-align: center;
+        color: map-get($font-color, font-dark );
+        font-size: map-get($font-sizes, xl );
+    }
+    h2 {
+        @extend .h1-inicio;
+        font-size: map-get($font-sizes, m );
+    }
+    .img-portada {
+        width: 100%;
+    }
+    p {
+        font-family: $p-font;
+        color: map-get($font-color, p-dark );
+        font-size: map-get($font-sizes, s );
+        span {
+            a {
+                color: $link-dark;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.fondo-oscuro {
+    background-color: $bg-color-dark;
+    div {
+        p {
+            color: $p-light;
+            font-family: $p-font;
+            text-align: justify;
+        }
+    }
+}
+
+.h2-fondo-oscuro {
+    color: $font-light;
+    font-size: map-get($font-sizes, l );
+}
+
+.imagen-natacion-pro {
+    @include medidas-img (250px, 250px);
+}
+
+.imagen-flia {
+    @extend .imagen-natacion-pro;
+}
+
+h1 {
+    @extend .h1-inicio;
+    font-size: map-get($font-sizes, l );
+}
