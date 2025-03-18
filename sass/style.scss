@@ -1,0 +1,9 @@
+
+/*BASE*/
+@use 'partials/base/reset';
+@use 'partials/base/tipografia';
+/*UTILITIES*/
+@use 'partials/utilities/variables';
+@use 'partials/utilities/mixins';
+/*COMPONENTS*/
+@use 'partials/components/navbar';

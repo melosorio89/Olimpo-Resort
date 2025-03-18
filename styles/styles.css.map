@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/style.scss","../sass/partials/base/_reset.scss","../sass/partials/base/_tipografia.scss","../sass/partials/utilities/_variables.scss","../sass/partials/utilities/_mixins.scss"],"names":[],"mappings":"AACA;ACDA;EACI;EACA;;;ACFJ;AAAA;AAAA;AFIA;AGHA;AAKA;AAKA;ACVA;AAMA;AJAA","file":"styles.css"}
