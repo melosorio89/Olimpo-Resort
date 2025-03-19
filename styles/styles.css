@@ -7,13 +7,6 @@
 /*  font-family: "Cinzel", serif;
     font-family: "Montserrat", sans-serif;
     font-family: Arial, Helvetica, sans-serif*/
-/*UTILITIES*/
-/*BACKGORUND COLORS*/
-/*FUENTES*/
-/*MAPA FUENTES*/
-/*IMG MIXIN*/
-/*BOX MIXIN*/
-/*COMPONENTS*/
 /*partial variables*/
 /*BACKGORUND COLORS*/
 /*FUENTES*/
@@ -47,12 +40,48 @@ nav div div ul li a:hoover {
   color: #01591d;
 }
 
+/*component FOOTER*/
+.container-footer {
+  background-color: #01591d;
+}
+
+.box-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-redes a {
+  text-decoration: none;
+}
+.box-redes a .logo-instagram, .box-redes a .logo-whatsapp, .box-redes a .logo-facebook {
+  width: 50px;
+  height: 50px;
+}
+.box-copy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-fondo-oscuro {
+  color: #ffffff;
+  font-family: "Monserrat", sans-serif;
+  font-size: 16px;
+}
+
+.logo-dark {
+  width: 80px;
+  height: 80px;
+}
+
 /*Component HOME*/
 main {
   background-color: #fcecdc;
 }
 
-.box-portada .h1-inicio, .box-portada h1, .box-portada h2 {
+.box-portada .h1-inicio, .box-portada h2 {
   font-family: "Cinzel", serif;
   text-align: center;
   color: #014b18;
@@ -65,9 +94,11 @@ main {
   width: 100%;
 }
 .box-portada p {
+  padding: 20px;
   font-family: "Monserrat", sans-serif;
   color: #000000;
   font-size: 16px;
+  text-align: justify;
 }
 .box-portada p span a {
   color: #2d7a03;
@@ -77,24 +108,60 @@ main {
 .fondo-oscuro {
   background-color: #01591d;
 }
-.fondo-oscuro div p {
+
+.h2-fondo-oscuro {
+  color: #ffffff;
+  font-size: 56px;
+}
+.h2-fondo-oscuro div .p2-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.p-fondo-oscuro {
   color: #ffffff;
   font-family: "Monserrat", sans-serif;
   text-align: justify;
 }
 
-.h2-fondo-oscuro {
-  color: #eceac9;
-  font-size: 56px;
+figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .imagen-natacion-pro, .imagen-flia {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
 }
 
-h1 {
+/*Component nosotros*/
+.h1-nosotros {
+  font-family: "Cinzel", serif;
+  color: #014b18;
   font-size: 56px;
+  text-align: center;
+  padding: 15px;
+}
+
+.p1-nosotros {
+  padding: 20px;
+  font-family: "Monserrat", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  text-align: justify;
+}
+.p1-nosotros span a {
+  color: #2d7a03;
+  text-decoration: none;
+}
+
+.staff-image {
+  width: 50px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

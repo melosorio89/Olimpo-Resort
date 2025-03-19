@@ -1,0 +1,29 @@
+
+
+nav {
+    div {
+        background-color: $bg-color-light;
+        margin-bottom: 0;
+        div {
+            width: 100%;
+            ul {
+                li {
+                    font-family: $p-font;
+                    color: #000000;
+                    a:hoover {
+                        color: $link-dark;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.logo-light {
+    @include medidas-img (80px, 80px);
+}
+
+.navbar-toggler {
+    color: $bg-color-dark;
+}

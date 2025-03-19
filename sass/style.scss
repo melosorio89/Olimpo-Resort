@@ -2,11 +2,6 @@
 /*BASE*/
 @use 'partials/base/reset';
 @use 'partials/base/tipografia';
-/*UTILITIES*/
-@use 'partials/utilities/variables';
-@use 'partials/utilities/mixins';
-/*COMPONENTS*/
-@use 'partials/components/navbar';
 
 /*partial variables*/
 
@@ -96,6 +91,45 @@ nav {
     color: $bg-color-dark;
 }
 
+/*component FOOTER*/
+
+.container-footer {
+    background-color: $bg-color-dark;
+}
+
+.box-redes {
+    @include flex(row, space-around, center);
+    a {
+        text-decoration: none;
+        .logo-instagram {
+            @include medidas-img(50px, 50px);
+        }
+        
+        .logo-facebook {
+            @extend .logo-instagram;
+        }
+        
+        .logo-whatsapp {
+            @extend .logo-instagram;
+        }
+    }
+}
+
+.box-copy {
+    @include flex(row, center, center);
+}
+
+.p-fondo-oscuro {
+    color: $p-light;
+    font-family: $p-font;
+    font-size: 16px;
+}
+
+
+.logo-dark {
+    @include medidas-img(80px, 80px);
+}
+
 /*Component HOME*/
 
 main {
@@ -117,9 +151,11 @@ main {
         width: 100%;
     }
     p {
+        padding: 20px;
         font-family: $p-font;
         color: map-get($font-color, p-dark );
         font-size: map-get($font-sizes, s );
+        text-align: justify;
         span {
             a {
                 color: $link-dark;
@@ -131,29 +167,59 @@ main {
 
 .fondo-oscuro {
     background-color: $bg-color-dark;
-    div {
-        p {
-            color: $p-light;
-            font-family: $p-font;
-            text-align: justify;
-        }
-    }
 }
 
 .h2-fondo-oscuro {
-    color: $font-light;
+    color: #ffffff;
     font-size: map-get($font-sizes, l );
+    div .p2-home {
+        @include flex(row, space-around, baseline);
+    }
 }
 
+.p-fondo-oscuro {
+    color: $p-light;
+    font-family: $p-font;
+    text-align: justify;
+}
+
+ figure {
+    @include flex(row, space-around, center);
+ }
 .imagen-natacion-pro {
-    @include medidas-img (250px, 250px);
+    @include medidas-img (350px, 350px);
 }
 
 .imagen-flia {
     @extend .imagen-natacion-pro;
 }
 
-h1 {
-    @extend .h1-inicio;
-    font-size: map-get($font-sizes, l );
+
+
+/*Component nosotros*/
+
+.h1-nosotros {
+    font-family: $primary-font;
+    color: $font-dark;
+    font-size: 56px;
+    text-align: center;
+    padding: 15px;
+}
+
+.p1-nosotros {
+    padding: 20px;
+    font-family: $p-font;
+    color: map-get($font-color, p-dark );
+    font-size: map-get($font-sizes, s );
+    text-align: justify;
+    span {
+        a {
+            color: $link-dark;
+            text-decoration: none;
+        }
+    }
+}
+
+.staff-image {
+    @include medidas-img(50px, 50px);
 }
