@@ -160,41 +160,66 @@ main {
             a {
                 color: $link-dark;
                 text-decoration: none;
+                &:hover {
+                    color: $link-light;
+                }
             }
         }
     }
 }
 
-.fondo-oscuro {
+.fondo-oscuro-titulo {
+    border: 0;
     background-color: $bg-color-dark;
-}
-
-.h2-fondo-oscuro {
-    color: #ffffff;
-    font-size: map-get($font-sizes, l );
-    div .p2-home {
-        @include flex(row, space-around, baseline);
+    div {
+        h2 {
+            color: $font-light;
+        }
     }
 }
 
-.p-fondo-oscuro {
-    color: $p-light;
-    font-family: $p-font;
-    text-align: justify;
+.box2-home {
+    border: 0;
+    background-color: $bg-color-dark;
+    div {
+        figure {
+            @include flex(row, space-around, center);
+        }
+    }
+    div {
+        @include flex(row, space-around, center);
+        p {
+           color: map-get($font-color, p-light);
+           font-family: $p-font;
+           font-size: map-get($font-sizes, s);
+        }
+    }
 }
 
- figure {
-    @include flex(row, space-around, center);
- }
 .imagen-natacion-pro {
-    @include medidas-img (350px, 350px);
+    @include medidas-img(350px, 350px);
 }
+
+.box3-home {
+    div {
+        figure {
+            @include flex(row, space-around, center);
+        }
+    }
+    div {
+        @include flex(row, space-around, center);
+        p {
+           color: map-get($font-color, p-dark);
+           font-family: $p-font;
+           font-size: map-get($font-sizes, s);
+        }
+    }
+}
+
 
 .imagen-flia {
     @extend .imagen-natacion-pro;
 }
-
-
 
 /*Component nosotros*/
 
@@ -206,7 +231,7 @@ main {
     padding: 15px;
 }
 
-.p1-nosotros {
+.p-fondo-claro {
     padding: 20px;
     font-family: $p-font;
     color: map-get($font-color, p-dark );
@@ -220,6 +245,111 @@ main {
     }
 }
 
-.staff-image {
-    @include medidas-img(50px, 50px);
+.box2-nosotros {
+    div {
+        h2 {
+            font-family: $primary-font;
+            text-align: center;
+            color: map-get($font-color, font-dark );
+            font-size: map-get($font-sizes, m );
+        }
+    }
+}
+
+.box-img-nosotros {
+    margin: 0;
+    border: 0;
+    padding-top: 10px;
+    background-color: $bg-color-dark;
+    div {
+        figure {
+            @include flex(row, space-around, center);
+        }
+    }
+}
+
+.staf-image {
+    @include medidas-img(250px, 250px);
+}
+
+/*componente carrousel*/
+
+.h1-servicios {
+    @extend .h1-nosotros;
+}
+
+.carrousel-box {
+    padding: 10px;
+}
+
+h5 {
+    border: solid, white;
+    font-family: $p-font;
+    font-size: 15px;
+    background-color: rgba(1, 75, 24, 0.65);
+}
+
+.carousel-caption {
+    p {
+        font-family: $p-font;
+        background-color: rgba(1, 75, 24, 0.65);
+        border-radius: 10px;
+    }
+}
+
+/*component instalaciones*/
+
+.h1-instalaciones {
+    @extend .h1-nosotros;
+}
+
+.img-hospedaje {
+    width: 100%;
+}
+
+/*components contacto*/
+
+.fondo-oscuro {
+    background-color: $bg-color-dark;
+    div {
+        p {
+            color: map-get($font-color, p-light);
+            font-family: $p-font;
+            font-size: map-get($font-sizes, s);
+        }
+    }
+}
+
+.h1-contacto {
+    @extend .h1-nosotros;
+    color: $font-light;
+}
+
+.img-contacto {
+    width: 100%;
+}
+
+.form-label {
+    color: map-get($font-color, p-light);
+    font-family: $p-font;
+    font-size: map-get($font-sizes, s);
+}
+
+.form-check-label {
+    @extend .form-label;
+}
+
+.button-container {
+    @include flex(row, space-around, center);
+    padding: 30px;
+    button {
+        background-color: $bg-color-light;
+        color: $p-dark;
+        font-family: $primary-font;
+        &:hover {
+            background-color: $bg-color-dark;
+            color: $p-light;
+        }
+    }
+
 }
