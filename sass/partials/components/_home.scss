@@ -1,0 +1,90 @@
+/*Component HOME*/
+
+main {
+    background-color: $bg-color-light;
+}
+
+.box-portada {
+    .h1-inicio {
+        font-family: $primary-font;
+        text-align: center;
+        color: map-get($font-color, font-dark );
+        font-size: map-get($font-sizes, xl );
+    }
+    h2 {
+        @extend .h1-inicio;
+        font-size: map-get($font-sizes, m );
+    }
+    .img-portada {
+        width: 100%;
+    }
+    p {
+        padding: 20px;
+        font-family: $p-font;
+        color: map-get($font-color, p-dark );
+        font-size: map-get($font-sizes, s );
+        text-align: justify;
+        span {
+            a {
+                color: $link-dark;
+                text-decoration: none;
+                &:hover {
+                    color: $link-light;
+                }
+            }
+        }
+    }
+}
+
+.fondo-oscuro-titulo {
+    border: 0;
+    background-color: $bg-color-dark;
+    div {
+        h2 {
+            color: $font-light;
+        }
+    }
+}
+
+.box2-home {
+    border: 0;
+    background-color: $bg-color-dark;
+    div {
+        figure {
+            @include flex(row, space-around, center);
+        }
+    }
+    div {
+        @include flex(row, space-around, center);
+        p {
+           color: map-get($font-color, p-light);
+           font-family: $p-font;
+           font-size: map-get($font-sizes, s);
+        }
+    }
+}
+
+.imagen-natacion-pro {
+    @include medidas-img(350px, 350px);
+}
+
+.box3-home {
+    div {
+        figure {
+            @include flex(row, space-around, center);
+        }
+    }
+    div {
+        @include flex(row, space-around, center);
+        p {
+           color: map-get($font-color, p-dark);
+           font-family: $p-font;
+           font-size: map-get($font-sizes, s);
+        }
+    }
+}
+
+
+.imagen-flia {
+    @extend .imagen-natacion-pro;
+}

@@ -1,0 +1,50 @@
+/*Component nosotros*/
+
+.h1-nosotros {
+    font-family: $primary-font;
+    color: $font-dark;
+    font-size: 56px;
+    text-align: center;
+    padding: 15px;
+}
+
+.p-fondo-claro {
+    padding: 20px;
+    font-family: $p-font;
+    color: map-get($font-color, p-dark );
+    font-size: map-get($font-sizes, s );
+    text-align: justify;
+    span {
+        a {
+            color: $link-dark;
+            text-decoration: none;
+        }
+    }
+}
+
+.box2-nosotros {
+    div {
+        h2 {
+            font-family: $primary-font;
+            text-align: center;
+            color: map-get($font-color, font-dark );
+            font-size: map-get($font-sizes, m );
+        }
+    }
+}
+
+.box-img-nosotros {
+    margin: 0;
+    border: 0;
+    padding-top: 10px;
+    background-color: $bg-color-dark;
+    div {
+        figure {
+            @include flex(row, space-around, center);
+        }
+    }
+}
+
+.staf-image {
+    @include medidas-img(250px, 250px);
+}

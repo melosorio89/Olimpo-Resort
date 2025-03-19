@@ -1,0 +1,38 @@
+/*component FOOTER*/
+
+.container-footer {
+    background-color: $bg-color-dark;
+}
+
+.box-redes {
+    @include flex(row, space-around, center);
+    a {
+        text-decoration: none;
+        .logo-instagram {
+            @include medidas-img(50px, 50px);
+        }
+        
+        .logo-facebook {
+            @extend .logo-instagram;
+        }
+        
+        .logo-whatsapp {
+            @extend .logo-instagram;
+        }
+    }
+}
+
+.box-copy {
+    @include flex(row, center, center);
+}
+
+.p-fondo-oscuro {
+    color: $p-light;
+    font-family: $p-font;
+    font-size: 16px;
+}
+
+
+.logo-dark {
+    @include medidas-img(80px, 80px);
+}

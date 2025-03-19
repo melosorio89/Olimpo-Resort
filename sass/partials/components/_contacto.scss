@@ -1,0 +1,46 @@
+/*components contacto*/
+
+.fondo-oscuro {
+    background-color: $bg-color-dark;
+    div {
+        p {
+            color: map-get($font-color, p-light);
+            font-family: $p-font;
+            font-size: map-get($font-sizes, s);
+        }
+    }
+}
+
+.h1-contacto {
+    @extend .h1-nosotros;
+    color: $font-light;
+}
+
+.img-contacto {
+    width: 100%;
+}
+
+.form-label {
+    color: map-get($font-color, p-light);
+    font-family: $p-font;
+    font-size: map-get($font-sizes, s);
+}
+
+.form-check-label {
+    @extend .form-label;
+}
+
+.button-container {
+    @include flex(row, space-around, center);
+    padding: 30px;
+    button {
+        background-color: $bg-color-light;
+        color: $p-dark;
+        font-family: $primary-font;
+        &:hover {
+            background-color: $bg-color-dark;
+            color: $p-light;
+        }
+    }
+
+}
