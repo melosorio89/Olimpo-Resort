@@ -7,6 +7,7 @@
 /*  font-family: "Cinzel", serif;
     font-family: "Montserrat", sans-serif;
     font-family: Arial, Helvetica, sans-serif*/
+/*UTILITIES*/
 /*partial variables*/
 /*BACKGORUND COLORS*/
 /*FUENTES*/
@@ -15,6 +16,7 @@
 /**partial mixin*/
 /*IMG MIXIN*/
 /*BOX MIXIN*/
+/*COMPONENTS*/
 /*componentes navbar*/
 nav div {
   background-color: #fcecdc;
