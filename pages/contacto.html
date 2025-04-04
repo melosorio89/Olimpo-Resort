@@ -64,21 +64,61 @@
             </figure>
           </div>
           <div class="col-12 col-md-8">
-            <form action="submit">
-              <label for="Inputnombre" class="form-label">NOMBRE</label>
-              <input type="text" class="form-control" id="Inputnombre" placeholder="Nombre">
-              <label for="Inputmail" class="form-label">CORREO ELECTRÓNICO</label>
-              <input type= "email" class="form-control" id="Inputmail" placeholder="example@site.com">
-              <div class="form-check">
-                <label for="Inputcheck" class="form-check-label">Soy Deportista Profesional</label>
-                <input type="checkbox" class="form-check-input" id="Inputcheck">
+            <div class="row">
+              <div class="col-12">
+                <form action="submit">
+                  <label for="Inputnombre" class="form-label">NOMBRE</label>
+                  <input type="text" class="form-control" id="Inputnombre" placeholder="Nombre">
+                  <label for="Inputmail" class="form-label">CORREO ELECTRÓNICO</label>
+                  <input type= "email" class="form-control" id="Inputmail" placeholder="example@site.com">
+                  <div class="form-check">
+                    <label for="Inputcheck" class="form-check-label">Soy Deportista Profesional</label>
+                    <input type="checkbox" class="form-check-input" id="Inputcheck">
+                  </div>
+                  <label for="Inputtexto" class="form-label">CONSULTA</label>
+                  <input type="text" class="form-control" id="Inputtexto" placeholder="Quisiera recibir información sobre...">
+                  <div class="button-container">
+                    <button type="submit" class="btn btn-primary">ENVIAR</button>
+                  </div>
+                </form>
               </div>
-              <label for="Inputtexto" class="form-label">CONSULTA</label>
-              <input type="text" class="form-control" id="Inputtexto" placeholder="Quisiera recibir información sobre...">
-              <div class="button-container">
-                <button type="submit" class="btn btn-primary">ENVIAR</button>
+            </div>
+            <div class="row row-accordeon">
+              <div class="col-12">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ¿Cómo hacer una reserva?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Para reservar estadía en nuestro resort, primero debes consultar la disponibilidad mediante el formulario de contacto, debido a que por eventos deportivos diversos, la misma no depende de la temporada vacacional sino de dichos eventos. Una vez nos envies tu consulta, un representante se comunicará contigo para brindarte informacion personalizada.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ¿Hay espacios adaptados para personas con capacidades reducidas?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Olimpo Resort cuenta con espacios comunes totalmente adaptados para personas con capacidades reducidas, no obstante las actividades deportivas adaptadas deben solicitarse con antelación fines se coordine con el equipo correspondiente.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Si no cuento con equipo deportivo, ¿puedo solicitarlo allí?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Nuestro Resort cuenta con todo el equipamento necesario para cada una de sus actividades. Si querés incursionar en algo nuevo y no contas con equipo, no te preocupes, se te proveerá de todo lo necesario en cada sector.</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </form>
+            </div> 
           </div>
         </div>
       </div>
