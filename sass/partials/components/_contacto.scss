@@ -48,4 +48,17 @@
 .accordion {
     background-color: $bg-color-dark;
     border-radius: 10px;
+    .accordion-item {
+        background-color: $bg-color-dark;
+        border-radius: 10px;
+        .accordion-header {
+            font-family: $p-font;
+            background-color: $bg-color-dark;
+            border-radius: 15px;
+            }
+        }
+    }
+
+.accordion-body {
+    color: $p-light;
 }
